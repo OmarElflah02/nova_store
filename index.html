@@ -1,151 +1,205 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Nova Store</title>
-		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<!-- Tailwind CSS -->
 		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+		<!-- AOS CSS -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 		<!-- Font Awesome -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
-		<!-- <link rel="stylesheet" href="style.css" /> -->
+		<link rel="stylesheet" href="style.css" />
 	</head>
 
 	<body class="bg-[#0a0a0a] font-serif text-white">
-		<header class="bg-black py-6.25 border-b border-[#292929] sticky top-0 z-10">
-			<div class="mx-auto max-w-275 w-[90%]">
-				<nav class="flex justify-between items-center">
-					<a href="" class="text-[25px] font-extrabold uppercase">Nova<span class="text-[#c8ff00]">.</span></a>
-					<a href="" class="text-[14px] text-[#aaa] capitalize transition duration-300 hover:text-[#c8ff00]">view All</a>
+		<!-- ==================== HEADER ==================== -->
+
+		<header class="sticky top-0 z-10 border-b border-[#292929] bg-black py-6.25">
+			<div class="mx-auto w-[90%] max-w-275">
+				<nav class="flex items-center justify-between">
+					<a href="#" class="text-[25px] font-extrabold"> NOVA<span class="text-[#c8ff00]">.</span> </a>
+
+					<a href="#" class="text-[14px] text-[#aaa] transition duration-300 hover:text-[#c8ff00]"> View All </a>
 				</nav>
 			</div>
 		</header>
+
+		<!-- ==================== PRODUCTS ==================== -->
+
 		<main>
 			<section class="py-25">
-				<div class="mx-auto max-w-275 w-[90%]">
-					<div class="max-w-150 mb-15" data-aos="fade-down" data-aos-duration="800" data-aos-easing="linear">
-						<span class="mb-3.75 block text-[12px] uppercase font-bold text-[#c8ff00] tracking-[2px]">our products</span>
-						<h1 class="mb-5 text-[clamp(40px,6vw,65px)] font-bold">Technology <span class="text-[#c8ff00]">Made Simple.</span></h1>
-						<p class="text-[#888]">Discover our latest products designed for modern life.</p>
+				<div class="mx-auto w-[90%] max-w-275">
+					<!-- Section Heading -->
+					<div class="mb-15 max-w-150" data-aos="fade-down" data-aos-duration="800" data-aos-easing="linear">
+						<span class="mb-3.75 block text-[12px] font-bold tracking-[2px] text-[#c8ff00]"> OUR PRODUCTS </span>
+
+						<h1 class="mb-5 text-[clamp(40px,6vw,65px)] font-bold leading-none">
+							Technology
+							<strong class="text-[#c8ff00]"> Made Simple. </strong>
+						</h1>
+
+						<p class="leading-[1.7] text-[#888]">Discover our latest products designed for modern life.</p>
 					</div>
+
+					<!-- Products Grid -->
+
 					<div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
-						<div
-							class="group relative overflow-hidden rounded-[10px] border border-[#292929] bg-[#141414] transition duration-300 ease-in-out hover:border-[#444] before:absolute before:-left-full before:top-0 before:h-0.75 before:w-full before:bg-[#c8ff00] before:transition-all before:duration-300 before:ease-in-out hover:before:left-0 after:absolute after:right-3.75 after:top-5 after:content-['NEW'] after:bg-[#c8ff00] after:px-2.5 after:py-1.25 after:text-[10px] after:font-bold after:text-black after:rounded-[20px]"
+						<!-- ==================== PRODUCT 1 ==================== -->
+
+						<article
+							class="group relative overflow-hidden rounded-[10px] border border-[#292929] bg-[#141414] transition duration-300 ease-in-out hover:border-[#444] before:absolute before:-left-full before:top-0 before:h-0.75 before:w-full before:bg-[#c8ff00] before:transition-all before:duration-300 before:ease-in-out hover:before:left-0 after:absolute after:right-3.75 after:top-5 after:rounded-[20px] after:bg-[#c8ff00] after:px-2.5 after:py-1.25 after:text-[10px] after:font-bold after:text-black after:content-['NEW']"
 							data-aos="fade-up"
 							data-aos-delay="100"
 							data-aos-duration="800"
+							data-aos-easing="linear"
 						>
-							<div class="h-50 flex items-center justify-center bg-[#1b1b1b] text-[75px] text-[#c8ff00]">
+							<div class="flex h-50 items-center justify-center bg-[#1b1b1b] text-[75px] text-[#c8ff00] transition duration-300 group-hover:bg-[#202020]">
 								<i class="fa-solid fa-laptop transition duration-300 group-hover:scale-110"></i>
 							</div>
+
 							<div class="p-6.25">
-								<span class="text-[#c8ff00] text-[10px] font-bold tracking-[2px]">laptop</span>
-								<h3 class="my-2.5 font-bold text-[22px] capitalize">novabook pro</h3>
-								<p class="mb-6.25 text-[#888] text-[13px]">Powerful performance for everyday work.</p>
-								<div class="flex justify-between items-center">
-									<strong class="text-[20px]">$999</strong>
-									<a href="" class="h-10 w-10 flex items-center justify-center rounded-full bg-[#c8ff00] text-black transition duration-300 hover:-rotate-45">
+								<span class="text-[10px] font-bold tracking-[2px] text-[#c8ff00]"> LAPTOP </span>
+
+								<h2 class="my-2.5 text-[22px] font-bold">NovaBook Pro</h2>
+
+								<p class="mb-6.25 text-[13px] leading-[1.6] text-[#888]">Powerful performance for everyday work.</p>
+
+								<div class="flex items-center justify-between">
+									<strong class="text-[20px]"> $999 </strong>
+
+									<a href="#" class="flex h-10 w-10 items-center justify-center rounded-full bg-[#c8ff00] text-black transition duration-300 hover:-rotate-45">
 										<i class="fa-solid fa-arrow-right"></i>
 									</a>
 								</div>
 							</div>
-						</div>
-						<div
-							class="group relative overflow-hidden rounded-[10px] border border-[#292929] bg-[#141414] transition duration-300 ease-in-out hover:border-[#444] before:absolute before:-left-full before:top-0 before:h-0.75 before:w-full before:bg-[#c8ff00] before:transition-all before:duration-300 before:ease-in-out hover:before:left-0 after:absolute after:right-3.75 after:top-5 after:content-['NEW'] after:bg-[#c8ff00] after:px-2.5 after:py-1.25 after:text-[10px] after:font-bold after:text-black after:rounded-[20px]"
+						</article>
+
+						<!-- ==================== PRODUCT 2 ==================== -->
+
+						<article
+							class="group relative overflow-hidden rounded-[10px] border border-[#292929] bg-[#141414] transition duration-300 ease-in-out hover:border-[#444] before:absolute before:-left-full before:top-0 before:h-0.75 before:w-full before:bg-[#c8ff00] before:transition-all before:duration-300 before:ease-in-out hover:before:left-0"
+							data-aos="fade-up"
+							data-aos-delay="200"
+							data-aos-duration="800"
+							data-aos-easing="linear"
+						>
+							<div class="flex h-50 items-center justify-center bg-[#1b1b1b] text-[75px] text-[#c8ff00] transition duration-300 group-hover:bg-[#202020]">
+								<i class="fa-solid fa-headphones transition duration-300 group-hover:scale-110"></i>
+							</div>
+
+							<div class="p-6.25">
+								<span class="text-[10px] font-bold tracking-[2px] text-[#c8ff00]"> AUDIO </span>
+
+								<h2 class="my-2.5 text-[22px] font-bold">NovaPods</h2>
+
+								<p class="mb-6.25 text-[13px] leading-[1.6] text-[#888]">Premium sound wherever you go.</p>
+
+								<div class="flex items-center justify-between">
+									<strong class="text-[20px]"> $199 </strong>
+
+									<a href="#" class="flex h-10 w-10 items-center justify-center rounded-full bg-[#c8ff00] text-black transition duration-300 hover:-rotate-45">
+										<i class="fa-solid fa-arrow-right"></i>
+									</a>
+								</div>
+							</div>
+						</article>
+
+						<!-- ==================== PRODUCT 3 ==================== -->
+
+						<article
+							class="group relative overflow-hidden rounded-[10px] border border-[#292929] bg-[#141414] transition duration-300 ease-in-out hover:border-[#444] before:absolute before:-left-full before:top-0 before:h-0.75 before:w-full before:bg-[#c8ff00] before:transition-all before:duration-300 before:ease-in-out hover:before:left-0 after:absolute after:right-3.75 after:top-5 after:rounded-[20px] after:bg-[#c8ff00] after:px-2.5 after:py-1.25 after:text-[10px] after:font-bold after:text-black after:content-['NEW']"
 							data-aos="fade-up"
 							data-aos-delay="300"
 							data-aos-duration="800"
+							data-aos-easing="linear"
 						>
-							<div class="h-50 flex items-center justify-center bg-[#1b1b1b] text-[75px] text-[#c8ff00]">
-								<i class="fa-solid fa-laptop transition duration-300 group-hover:scale-110"></i>
+							<div class="flex h-50 items-center justify-center bg-[#1b1b1b] text-[75px] text-[#c8ff00] transition duration-300 group-hover:bg-[#202020]">
+								<i class="fa-regular fa-clock transition duration-300 group-hover:scale-110"></i>
 							</div>
+
 							<div class="p-6.25">
-								<span class="text-[#c8ff00] text-[10px] font-bold tracking-[2px]">laptop</span>
-								<h3 class="my-2.5 font-bold text-[22px] capitalize">novabook pro</h3>
-								<p class="mb-6.25 text-[#888] text-[13px]">Powerful performance for everyday work.</p>
-								<div class="flex justify-between items-center">
-									<strong class="text-[20px]">$999</strong>
-									<a href="" class="h-10 w-10 flex items-center justify-center rounded-full bg-[#c8ff00] text-black transition duration-300 hover:-rotate-45">
+								<span class="text-[10px] font-bold tracking-[2px] text-[#c8ff00]"> WEARABLE </span>
+
+								<h2 class="my-2.5 text-[22px] font-bold">NovaWatch</h2>
+
+								<p class="mb-6.25 text-[13px] leading-[1.6] text-[#888]">Smart features in a minimal design.</p>
+
+								<div class="flex items-center justify-between">
+									<strong class="text-[20px]"> $299 </strong>
+
+									<a href="#" class="flex h-10 w-10 items-center justify-center rounded-full bg-[#c8ff00] text-black transition duration-300 hover:-rotate-45">
 										<i class="fa-solid fa-arrow-right"></i>
 									</a>
 								</div>
 							</div>
-						</div>
-						<div
-							class="group relative overflow-hidden rounded-[10px] border border-[#292929] bg-[#141414] transition duration-300 ease-in-out hover:border-[#444] before:absolute before:-left-full before:top-0 before:h-0.75 before:w-full before:bg-[#c8ff00] before:transition-all before:duration-300 before:ease-in-out hover:before:left-0 after:absolute after:right-3.75 after:top-5 after:content-['NEW'] after:bg-[#c8ff00] after:px-2.5 after:py-1.25 after:text-[10px] after:font-bold after:text-black after:rounded-[20px]"
-							data-aos="fade-up"
-							data-aos-delay="500"
-							data-aos-duration="800"
-						>
-							<div class="h-50 flex items-center justify-center bg-[#1b1b1b] text-[75px] text-[#c8ff00]">
-								<i class="fa-solid fa-laptop transition duration-300 group-hover:scale-110"></i>
-							</div>
-							<div class="p-6.25">
-								<span class="text-[#c8ff00] text-[10px] font-bold tracking-[2px]">laptop</span>
-								<h3 class="my-2.5 font-bold text-[22px] capitalize">novabook pro</h3>
-								<p class="mb-6.25 text-[#888] text-[13px]">Powerful performance for everyday work.</p>
-								<div class="flex justify-between items-center">
-									<strong class="text-[20px]">$999</strong>
-									<a href="" class="h-10 w-10 flex items-center justify-center rounded-full bg-[#c8ff00] text-black transition duration-300 hover:-rotate-45">
-										<i class="fa-solid fa-arrow-right"></i>
-									</a>
-								</div>
-							</div>
-						</div>
+						</article>
 					</div>
-				</div>
-				<div class="my-12.5 flex justify-center" data-aos="zoom-in-up" data-aos-delay="400">
-					<a href="" class="group bg-[#c8ff00] px-6 py-3 rounded-[5px] text-black flex gap-3 items-center transition duration-300 capitalize hover:-translate-y-1"
-						>explore products
-						<i class="fa-solid fa-arrow-right transition duration-300 group-hover:translate-x-1.25"></i>
-					</a>
+
+					<!-- ==================== BUTTON ==================== -->
+
+					<div class="mt-12.5 flex justify-center" data-aos="zoom-in-up" data-aos-delay="400">
+						<a href="#" class="group inline-flex items-center gap-3 rounded-[5px] bg-[#c8ff00] px-6.25 py-3.5 text-[13px] font-bold text-black transition duration-300 hover:-translate-y-1">
+							Explore Products
+
+							<i class="fa-solid fa-arrow-right transition duration-300 group-hover:translate-x-1.25"></i>
+						</a>
+					</div>
 				</div>
 			</section>
 		</main>
 
-		<footer class="border border-[#292929] bg-black p-8">
-			<div class="mx-auto max-w-275 w-[90%]">
-				<div class="flex justify-between items-center gap-7 pb-7 max-[600px]:flex-col max-[600px]:text-center">
+		<!-- ==================== FOOTER ==================== -->
+
+		<footer class="border-t border-[#292929] bg-black px-7.5 py-7.5">
+			<div class="mx-auto w-[90%] max-w-275">
+				<div class="flex items-center justify-between gap-7.5 pb-8.75 max-[600px]:flex-col max-[600px]:text-center">
 					<div data-aos="fade-right" data-aos-duration="800">
-						<a href="" class="uppercase text-[25px]">Nova<span class="text-[#c8ff00]">.</span></a>
-						<p class="text-[#888] text-[13px] mt-2.5">Modern technology. Simple life.</p>
+						<a href="#" class="text-[25px] font-extrabold"> NOVA<span class="text-[#c8ff00]">.</span> </a>
+
+						<p class="mt-2.5 text-[13px] text-[#888]">Modern technology. Simple life.</p>
 					</div>
-					<div class="flex gap-2.5" data-aos="fade-right" data-aos-duration="800" >
+
+					<div class="flex gap-2.5" data-aos="fade-right" data-aos-duration="800">
 						<a
 							href="#"
-							aria-label="Facebook"
-							class="h-9.5 w-9.5 rounded-full border border-[#292929] flex items-center justify-center text-[#aaa] transition duration-300 hover:bg-[#c8ff00] hover:text-black hover:-translate-y-1"
+							class="flex h-9.5 w-9.5 items-center justify-center rounded-full border border-[#292929] text-[14px] text-[#aaa] transition duration-300 hover:-translate-y-0.75 hover:border-[#c8ff00] hover:bg-[#c8ff00] hover:text-black"
 						>
 							<i class="fa-brands fa-facebook-f"></i>
 						</a>
+
 						<a
 							href="#"
-							aria-label="Facebook"
-							class="h-9.5 w-9.5 rounded-full border border-[#292929] flex items-center justify-center text-[#aaa] transition duration-300 hover:bg-[#c8ff00] hover:text-black hover:-translate-y-1"
+							class="flex h-9.5 w-9.5 items-center justify-center rounded-full border border-[#292929] text-[14px] text-[#aaa] transition duration-300 hover:-translate-y-0.75 hover:border-[#c8ff00] hover:bg-[#c8ff00] hover:text-black"
 						>
-							<i class="fa-brands fa-facebook-f"></i>
+							<i class="fa-brands fa-instagram"></i>
 						</a>
+
 						<a
 							href="#"
-							aria-label="Facebook"
-							class="h-9.5 w-9.5 rounded-full border border-[#292929] flex items-center justify-center text-[#aaa] transition duration-300 hover:bg-[#c8ff00] hover:text-black hover:-translate-y-1"
+							class="flex h-9.5 w-9.5 items-center justify-center rounded-full border border-[#292929] text-[14px] text-[#aaa] transition duration-300 hover:-translate-y-0.75 hover:border-[#c8ff00] hover:bg-[#c8ff00] hover:text-black"
 						>
-							<i class="fa-brands fa-facebook-f"></i>
+							<i class="fa-brands fa-github"></i>
 						</a>
+
 						<a
 							href="#"
-							aria-label="Facebook"
-							class="h-9.5 w-9.5 rounded-full border border-[#292929] flex items-center justify-center text-[#aaa] transition duration-300 hover:bg-[#c8ff00] hover:text-black hover:-translate-y-1"
+							class="flex h-9.5 w-9.5 items-center justify-center rounded-full border border-[#292929] text-[14px] text-[#aaa] transition duration-300 hover:-translate-y-0.75 hover:border-[#c8ff00] hover:bg-[#c8ff00] hover:text-black"
 						>
-							<i class="fa-brands fa-facebook-f"></i>
+							<i class="fa-brands fa-linkedin-in"></i>
 						</a>
 					</div>
 				</div>
+
 				<div class="border-t border-[#292929] pt-5 text-center text-[11px] text-[#666]">
-					<p>&copy; NOVA. All rights reserved.</p>
+					<p>&copy; 2026 NOVA. All rights reserved.</p>
 				</div>
 			</div>
 		</footer>
+
+		<!-- ==================== AOS JS ==================== -->
+
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script>
 			AOS.init();
